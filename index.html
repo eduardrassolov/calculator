@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style/styles.css" />
+    <title>Calculator app</title>
+  </head>
+  <body>
+    <section>
+      <div class="container">
+        <div class="header">
+          <div class="title">
+            <h3 class="title-header">calc app</h3>
+          </div>
+          <div class="theme">
+            <input
+              id="theme-number"
+              type="range"
+              class="theme-choose"
+              min="1"
+              max="3"
+              value="1"
+              list="values"
+              smooth="yes"
+            />
+            <datalist id="values">
+              <option value="1" label="1"></option>
+              <option value="2" label="2"></option>
+              <option value="3" label="3"></option>
+            </datalist>
+          </div>
+        </div>
+        <div class="input-output">
+          <div class="prev-container">
+            <h3 class="previous-output"></h3>
+          </div>
+          <div class="current-container">
+            <h1 class="current-output">0</h1>
+          </div>
+        </div>
+        <div class="btn-field">
+          <div class="grid-item">
+            <button class="btn-numb" value="7">7</button>
+          </div>
+          <div class="grid-item">
+            <button class="btn-numb" value="8">8</button>
+          </div>
+          <div class="grid-item">
+            <button class="btn-numb" value="9">9</button>
+          </div>
+          <div class="grid-item">
+            <button class="btn-del" value="del">DEL</button>
+          </div>
+
+          <div class="grid-item">
+            <button class="btn-numb" value="4">4</button>
+          </div>
+          <div class="grid-item">
+            <button class="btn-numb" value="5">5</button>
+          </div>
+          <div class="grid-item">
+            <button class="btn-numb" value="6">6</button>
+          </div>
+          <div class="grid-item">
+            <button class="btn-operand" value="+">+</button>
+          </div>
+
+          <div class="grid-item">
+            <button class="btn-numb" value="1">1</button>
+          </div>
+          <div class="grid-item">
+            <button class="btn-numb" value="2">2</button>
+          </div>
+          <div class="grid-item">
+            <button class="btn-numb" value="3">3</button>
+          </div>
+          <div class="grid-item">
+            <button class="btn-operand" value="-">-</button>
+          </div>
+
+          <div class="grid-item">
+            <button class="btn-numb" value=".">.</button>
+          </div>
+          <div class="grid-item">
+            <button class="btn-numb" value="0">0</button>
+          </div>
+          <div class="grid-item">
+            <button class="btn-operand" value="/">/</button>
+          </div>
+          <div class="grid-item">
+            <button class="btn-operand" value="*">x</button>
+          </div>
+
+          <div class="grid-reset grid-item">
+            <button class="btn-reset" value="reset">RESET</button>
+          </div>
+          <div class="grid-equal grid-item">
+            <button class="btn-equal" value="equal">=</button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <script src="app.js"></script>
+  <script src="slide.js"></script>
+</html>
